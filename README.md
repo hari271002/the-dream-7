@@ -10,7 +10,7 @@ password:- 1223$5678)
 1.View player stats \
 2.Add player to the data base \
 3.Delete player to the data base \
-4.Update player stats \
+4.Update player stats 
 
 
 If the User is a player. These are the rules of the game
@@ -24,4 +24,4 @@ If the User is a player. These are the rules of the game
 7.For every wicket taken 10 points are added to the score \
 8.For every catch 10 points are added to the score \
 9.For every run out 5 points are added to the score \
-10.Among all players the player with highest score wins the game. \
+10.Among all players the player with highest score wins the game. 

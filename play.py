@@ -20,12 +20,12 @@ def play():
     print('Welcome the dream-7 :) ')
     while True:
         try:
-            user_int=int(input('pls enter 1 for admin login or pls enter 2 to play the game '))
+            user_int=int(input('pls enter 1 for admin login or pls enter 2 to play the game ')) # the user can enter only a number as a input
             break
         except ValueError:
             print('pls enter only a number')
     while user_int!=1 and user_int!=2:
-        user_int=int(input('pls enter either 1 or 2 '))
+        user_int=int(input('pls enter either 1 or 2 ')) # 1 or 2 is allowed
     if user_int==1:
         print('Hi admin :) welcome back ')
         admin.admin_operations()
@@ -43,16 +43,16 @@ def play():
         print('For every run out 5 points are added to the score')
         while True:
             try:
-                no_of_users=int(input('enter the no.of players who want to play the game  '))
+                no_of_users=int(input('enter the no.of players who want to play the game  ')) # the user is allowed only a number
                 break
             except ValueError:
                 print('enter only a number as input')
         while no_of_users<1:
-            no_of_users=int(input("the minimum no.of users should be 1 "))
-        selected_teams=[]
+            no_of_users=int(input("the minimum no.of users should be 1 ")) # the no. players should be greater than 0
+        selected_teams=[] # this array stores the players teams
         for i in range(no_of_users):
             selected_teams.append(user_selection(i+1))
-        res=[]
+        res=[] # this array stores the total score
         for i in range(no_of_users):
             if(i>0):
                 print('--------------')

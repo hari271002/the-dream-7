@@ -1,9 +1,5 @@
 import sqlite3 #importing sqlite package
 
-# from add_player import adding # from add player py script importing adding functiom
-# from delete_player import deleting # from delete player py script importing delete function
-# from update_player import updating # from update player py script importing updating function
-# from view_player import viewing # from view player py script importing viewing function 
 
 from adminn import add_player
 from adminn import delete_player
