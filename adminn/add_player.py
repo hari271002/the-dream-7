@@ -1,6 +1,6 @@
 import sqlite3
 def adding():
-    conn=sqlite3.connect('player.db') # connecting to the database
+    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') # connecting to the database
     c=conn.cursor()  # creating a cursor
     
     player_name=input('enter the player name ') 
@@ -61,3 +61,5 @@ def adding():
     conn.commit()
     conn.close()
     return
+
+adding()

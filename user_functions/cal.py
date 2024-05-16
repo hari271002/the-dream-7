@@ -5,46 +5,38 @@ import sqlite3
     
     
 def user_selection():
-    players_list=['dhoni',
-                  'kohli',
-                  'rohit',
-                  'dhawan',
-                  'rahane',
-                  'ruturaj',
-                  'gill',
-                  'bumrah',
-                  'siraj',
-                  'umesh',
-                  'deshpande',
-                  'shardul',
-                  'starc',
-                  'cummins']
+    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') # connecting to the database
+    c=conn.cursor()  # creating a cursor
+    c.execute('SELECT * FROM teamplayers')
+    players_list=c.fetchall()
     print('-----------------')
-    print('\n'.join([i for i in players_list]))
+    for i in players_list:
+        print(i[0])
     print('-----------------')
-    selected_players=[]
-    count=0
-    while(count<7):
-        user_in=input('select a player from the player_list:  ')
-        try:
-            if user_in in players_list and user_in not in selected_players:
-                selected_players.append(user_in)
-                players_list.remove(user_in)
-                count+=1
-                print('the players to be selected more {}'.format(7-count))
-                print('-----------------')
-                print('\n'.join([i for i in players_list]))
-                print('-----------------')
-                print('\n'.join([i for i in selected_players]))
-                print('-----------------')
-            else:
-                if user_in in selected_players:
-                    print('The player is already selected')
-                else:
-                    print('The player is not available')
-        except Exception as e:
-            print("An error occurred:", e)
-    return selected_players
+    # selected_players=[]
+    # count=0
+    # while(count<7):
+    #     user_in=input('select a player from the player_list:  ')
+    #     try:
+    #         if user_in in players_list and user_in not in selected_players:
+    #             selected_players.append(user_in)
+    #             players_list.remove(user_in)
+    #             count+=1
+    #             print('the players to be selected more {}'.format(7-count))
+    #             print('-----------------')
+    #             print('\n'.join([i for i in players_list]))
+    #             print('-----------------')
+    #             print('\n'.join([i for i in selected_players]))
+    #             print('-----------------')
+    #         else:
+    #             if user_in in selected_players:
+    #                 print('The player is already selected')
+    #             else:
+    #                 print('The player is not available')
+    #     except Exception as e:
+    #         print("An error occurred:", e)
+    conn.close()
+    # return selected_players
 
 def calculate(arr):
     res=[]
@@ -87,4 +79,4 @@ def play():
     if(total_1>total_2):
         return 'player_1_wins'
     return 'player_2_wins'
-print(play())
+user_selection()
