@@ -1,7 +1,7 @@
 # Dream 7
 
-Welcome to the Python console application.
-The user can be a admin or a player.
+Welcome to the Python console application.\
+The user can be a admin or a player.\
 If the user is a admin. The following operations can be performed
 (the admin id:- admin@123
 password:- 1223$5678)
