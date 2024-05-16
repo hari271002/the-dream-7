@@ -25,3 +25,5 @@ If the User is a player. These are the rules of the game
 8.For every catch 10 points are added to the score \
 9.For every run out 5 points are added to the score \
 10.Among all players the player with highest score wins the game. 
+
+Play.py is the master file(which is to be executed)
