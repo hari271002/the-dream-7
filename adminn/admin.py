@@ -1,10 +1,14 @@
 import sqlite3 #importing sqlite package
 
-from add_player import adding # from add player py script importing adding functiom
-from delete_player import deleting # from delete player py script importing delete function
-from update_player import updating # from update player py script importing updating function
-from view_player import viewing # from view player py script importing viewing function 
+# from add_player import adding # from add player py script importing adding functiom
+# from delete_player import deleting # from delete player py script importing delete function
+# from update_player import updating # from update player py script importing updating function
+# from view_player import viewing # from view player py script importing viewing function 
 
+from adminn import add_player
+from adminn import delete_player
+from adminn import view_player
+from adminn import update_player
 
 def admin_operations():  
     admin_id=input('please, enter the admin user id :)  ') # takes input from the user to verify the admin id
@@ -35,13 +39,13 @@ def admin_operations():
             if operation_input==10:
                 return
         if operation_input==1:
-            updating()
+            update_player.updating()
         elif operation_input==2:
-            viewing()
+            view_player.viewing()
         elif operation_input==3:
-            adding()
+            add_player.adding()
         elif operation_input==4:
-            deleting()
+            delete_player.deleting()
         else:
             print('Logging out')
             break

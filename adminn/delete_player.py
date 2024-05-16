@@ -24,4 +24,4 @@ def deleting():
     conn.close()
     return 
 
-deleting()
+
