@@ -53,7 +53,6 @@ def adding():
             break  
         except ValueError:
             print("Please enter a number only.")
-    
     strike_rate=int((runs_scored/balls_faced)*100)
     player_stat=[(player_name,runs_scored,balls_faced,strike_rate,no_overs,runs_given,wickets,catches,run_outs)]
     c.executemany("INSERT INTO teamplayers VALUES (?,?,?,?,?,?,?,?,?)",player_stat)

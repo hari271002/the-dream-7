@@ -5,12 +5,12 @@ def viewing():
     c=conn.cursor()
     c.execute('SELECT * FROM teamplayers') # retriving the data from the teamplayers
     data=c.fetchall() # gives total data in list form
-    user_player_input=int(input("press 1 to display stats of all player or press 2 to display indiviual player stats: "))
-    while user_player_input!=1 and user_player_input!=2: # this loop will ensure user only enters either 1 or 2 
-        print('wrong input please 1 or 2')
-        user_player_input=int(input("press 1 or 2 or if you like to exist pls press 3  "))
-        if user_player_input==3: # if 3 is pressed we are exited
-            return 
+    while True:
+        try:
+            user_player_input=int(input('please enter 1 to view all player stats or press 2 to view individual player stat:-'))
+            break
+        except ValueError:
+            print('Only 1 or 2 is allowed to enter')
     if user_player_input==1:
         print("name,runs_scored,bls_faced,strike_rate,overs,runs_given,wickets,catches,run_outs")
         for i in data:
