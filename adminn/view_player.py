@@ -1,7 +1,7 @@
 import sqlite3
 
 def viewing():
-    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') # connecting to the database
+    conn = sqlite3.connect('./player.db') # connecting to the database
     c=conn.cursor()
     c.execute('SELECT * FROM teamplayers') # retriving the data from the teamplayers
     data=c.fetchall() # gives total data in list form

@@ -35,8 +35,8 @@ c=conn.cursor() #created a cursor
 # c.execute("INSERT INTO teamplayers VALUES ('cummins',20,10,200,4,32,2,0,0)")
 
 # c.execute("SELECT * from teamplayers")
-data=c.fetchall()
-print(data)
+# data=c.fetchall()
+# print(data)
 
 conn.commit()
 

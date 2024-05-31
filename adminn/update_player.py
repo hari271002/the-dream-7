@@ -1,7 +1,7 @@
 import sqlite3 #importing sqlite database
 
 def updating():
-    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') #command to connect to the data base
+    conn = sqlite3.connect('./player.db') #command to connect to the data base
     c=conn.cursor() #creating a cursor for the data base
     c.execute("SELECT * FROM teamplayers")  #sql command to retrive the data
     data = c.fetchall() #this command return data in table in a list 

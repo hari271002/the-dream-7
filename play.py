@@ -9,7 +9,7 @@ from user_functions.cal import calculate
 from user_functions.user import user_selection
 
 
-conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') # connecting to the database
+conn = sqlite3.connect('player.db') # connecting to the database
 c=conn.cursor() # creating the cursor
 c.execute("SELECT * FROM teamplayers")  # retreving the data from the table
 data = c.fetchall() # storing the data in form of a list

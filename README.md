@@ -1,3 +1,6 @@
+pls note:- Play.py is the main file(which is to be executed) \
+player.db is database and players.py is a python file which is intially used to create the table \
+
 # Dream 7
 
 Welcome to the Python console application.\
@@ -26,4 +29,3 @@ If the User is a player. These are the rules of the game
 9.For every run out 5 points are added to the score \
 10.Among all players the player with highest score wins the game. 
 
-Play.py is the master file(which is to be executed)

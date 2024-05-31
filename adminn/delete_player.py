@@ -1,7 +1,7 @@
 import sqlite3
 
 def deleting():
-    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db')#creating connection with the player data base
+    conn = sqlite3.connect('./player.db')#creating connection with the player data base
     c=conn.cursor() #creating the cursor
     c.execute('SELECT * FROM teamplayers') # fecting the details fromt the teamplayers table
     data=c.fetchall() # return data in list

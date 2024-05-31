@@ -3,7 +3,7 @@ import sqlite3
 
 def calculate(arr):
     res=[]
-    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') # connecting to the database
+    conn = sqlite3.connect('./player.db') # connecting to the database
     c=conn.cursor()
     c.execute("SELECT * FROM teamplayers")  
     data = c.fetchall()

@@ -1,7 +1,7 @@
 import sqlite3
 
 def user_selection(team_no):
-    conn = sqlite3.connect(r'C:\Users\DEVELOPER--3\Desktop\projects\dream-7\player.db') # connecting to the database
+    conn = sqlite3.connect('./player.db') # connecting to the database
     c=conn.cursor()  # creating a cursor
     c.execute('SELECT * FROM teamplayers') # retriving data from the table
     players_list=c.fetchall() # this will return the data in array with all stats 
