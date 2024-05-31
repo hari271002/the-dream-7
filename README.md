@@ -1,5 +1,6 @@
 pls note:- Play.py is the main file(which is to be executed) \
-player.db is database and players.py is a python file which is intially used to create the table \
+player.db is database and players.py is a python file which is intially used to create the table,admin \
+folder has admin opertions , user_functions floder has user operations.
 
 # Dream 7
 
