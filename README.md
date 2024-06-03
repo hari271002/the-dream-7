@@ -7,8 +7,8 @@ folder has admin opertions , user_functions floder has user operations.
 Welcome to the Python console application.\
 The user can be a admin or a player.\
 If the user is a admin. The following operations can be performed \
-(the admin id:- admin@123 ,
-password:- 123$5678)
+the admin id:- admin@123 ,
+password:- 123$5678
 
 ## Admin operations
 1.View player stats \
