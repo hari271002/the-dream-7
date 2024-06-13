@@ -20,7 +20,9 @@ def play():
     print('Welcome the dream-7 :) ')
     while True:
         try:
-            user_int=int(input('pls enter 1 for admin login or pls enter 2 to play the game ')) # the user can enter only a number as a input
+            print('please enter 1 for admin login')
+            print('please enter 2 to play the game')
+            user_int=int(input()) # the user can enter only a number as a input
             break
         except ValueError:
             print('pls enter only a number')

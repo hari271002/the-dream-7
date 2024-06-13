@@ -28,6 +28,10 @@ def updating():
         player_stat=int(input('enter the correct input or if you like exist pl enter 10 '))
         if player_stat==10:
             return 
+    for i in data:
+        if i[0] == player_input:
+            current_value = i[player_stat]
+            print(f"The previous stat value is {current_value}")
     player_new_stat=input('enter the new value for the stat ') # this takes new stat from the user 
     if player_stat in [1,2,4,5,6,7,8]: # based on the player_stat we are converting in its data type
         player_new_stat=int(player_new_stat)

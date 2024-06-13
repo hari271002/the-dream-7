@@ -20,10 +20,12 @@ def viewing():
     else: #if the user only just want to a individual player stat
         temp=True
         while temp:
+            print_stat=['name','runs_scored','balls_faced','strike_rate','no_of_overs','runs_given','wickets','catches','runs_outs']
             input_player_stat=input('enter the name of player to view his stat: ') 
             for i in data:
                 if i[0]==input_player_stat:
-                    print(i)
+                    for j in range(len(i)):
+                        print(print_stat[j],'-',i[j])
                     temp=False
                     break
             else:
